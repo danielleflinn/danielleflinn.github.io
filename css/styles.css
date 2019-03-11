@@ -10,3 +10,9 @@ body {
 }
 
 /* Your Awesome Scripts */
+
+
+/* Light Gallery background */
+.lg-backdrop { 
+  background-color: rgba(200, 200, 250, .5);
+}
