@@ -312,6 +312,10 @@ footer nav ul {
 
 /* Contact Form */
 
+form {
+  margin: var(--tile-margin);
+}
+
 /* keyfram animations */
 @keyframes dash {
   100% {
