@@ -269,7 +269,7 @@ footer nav ul {
   background-color: var(--thr-color);
 }
 
-/* basi  project-grid and tiles */
+/* basic project-grid and tiles */
 
 .project-grid {
   margin: var(--tile-margin); 
@@ -290,83 +290,8 @@ footer nav ul {
 /* ux design page */
 
 
-#ux-tile-1 {
-  background-image: url(https://raw.githubusercontent.com/danielleflinn/danielleflinn.github.io/master/portfolio/img/print/digital-art/rfp-cover.png);
-}
-
-#ux-tile-2 {
-  background-image: url(https://raw.githubusercontent.com/danielleflinn/danielleflinn.github.io/master/portfolio/img/print/digital-art/rfp-cover.png);
-}
-
-#ux-tile-3 {
-  background-image: url(https://raw.githubusercontent.com/danielleflinn/danielleflinn.github.io/master/portfolio/img/print/digital-art/rfp-cover.png);
-}
-
-#ux-tile-4 {
-  background-image: url(https://raw.githubusercontent.com/danielleflinn/danielleflinn.github.io/master/portfolio/img/print/digital-art/rfp-cover.png);
-}
-
-#ux-tile-5 {
-  background-image: url(https://raw.githubusercontent.com/danielleflinn/danielleflinn.github.io/master/portfolio/img/print/digital-art/rfp-cover.png);
-}
-
-#ux-tile-6 {
-  background-image: url(https://raw.githubusercontent.com/danielleflinn/danielleflinn.github.io/master/portfolio/img/print/digital-art/rfp-cover.png);
-}
-
-/* print design page */
-
-
-#print-tile-1 {
-  background-image: url(https://raw.githubusercontent.com/danielleflinn/danielleflinn.github.io/master/portfolio/img/print/digital-art/rfp-cover.png);
-}
-
-#print-tile-2 {
-  background-image: url(https://raw.githubusercontent.com/danielleflinn/danielleflinn.github.io/master/portfolio/img/print/digital-art/rfp-cover.png);
-}
-
-#print-tile-3 {
-  background-image: url(https://raw.githubusercontent.com/danielleflinn/danielleflinn.github.io/master/portfolio/img/print/digital-art/rfp-cover.png);
-}
-
-#print-tile-4 {
-  background-image: url(https://raw.githubusercontent.com/danielleflinn/danielleflinn.github.io/master/portfolio/img/print/digital-art/rfp-cover.png);
-}
-
-#print-tile-5 {
-  background-image: url(https://raw.githubusercontent.com/danielleflinn/danielleflinn.github.io/master/portfolio/img/print/digital-art/rfp-cover.png);
-}
-
-#print-tile-6 {
-  background-image: url(https://raw.githubusercontent.com/danielleflinn/danielleflinn.github.io/master/portfolio/img/print/digital-art/rfp-cover.png);
-}
-
 /* Brand Design Page */
 
-
-#brand-tile-1 {
-  background-image: url(https://raw.githubusercontent.com/danielleflinn/danielleflinn.github.io/master/portfolio/img/print/digital-art/rfp-cover.png);
-}
-
-#brand-tile-2 {
-  background-image: url(https://raw.githubusercontent.com/danielleflinn/danielleflinn.github.io/master/portfolio/img/print/digital-art/rfp-cover.png);
-}
-
-#brand-tile-3 {
-  background-image: url(https://raw.githubusercontent.com/danielleflinn/danielleflinn.github.io/master/portfolio/img/print/digital-art/rfp-cover.png);
-}
-
-#brand-tile-4 {
-  background-image: url(https://raw.githubusercontent.com/danielleflinn/danielleflinn.github.io/master/portfolio/img/print/digital-art/rfp-cover.png);
-}
-
-#brand-tile-5 {
-  background-image: url(https://raw.githubusercontent.com/danielleflinn/danielleflinn.github.io/master/portfolio/img/print/digital-art/rfp-cover.png);
-}
-
-#brand-tile-6 {
-  background-image: url(https://raw.githubusercontent.com/danielleflinn/danielleflinn.github.io/master/portfolio/img/print/digital-art/rfp-cover.png);
-}
 
 /* keyfram animations */
 @keyframes dash {
