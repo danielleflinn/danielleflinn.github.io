@@ -1,47 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 
-<!-- Page Title -->
-    <title>About</title>
+    <!-- Page Title -->
+    <title>Danielle Flinn</title>
 
-<!-- Metadata -->
+    <!-- Metadata -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-<!-- Favicons -->
+    <!-- Favicons -->
     <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="img/favicons/favicon-16x16.png">
-    <link rel="manifest" href="img/favicons/site.webmanifest">
+    <link rel="manifest" href="/img/favicons/site.webmanifest">
     <meta name="msapplication-TileColor" content="#2b5797">
     <meta name="theme-color" content="#ffffff">
 
-<!-- Normalize CSS via CDN -->
+    <!-- Normalize CSS via CDN -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-<!-- Required Plugin Stylesheets -->    
-    
-<!-- My Awesome Styling -->
-    <link rel="stylesheet" href="css/styles.css">
+    <!-- Required Plugin Stylesheets -->
 
+    <!-- My Awesome Styling -->
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
-    
-    <h1>About</h1>
-    <nav>
-        <ul>
-            <li><a href="portfolio/index.html">Portfolio</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
+
+    <header>
+
+        <nav class="top-nav">
+            <a id="header-logo" href="/index.html">
+                <img src="https://raw.githubusercontent.com/danielleflinn/danielleflinn.github.io/master/img/logo-lightgray.png"
+                    alt="light gray logo with cursive d and f"></a>
+            <ul class="main-nav">
+                <li><a href="/portfolio/ux.html">UX Design</a></li>
+                <li><a href="/portfolio/brand.html">Brand Design</a></li>
+                <li><a href="/portfolio/print.html">Print Design</a></li>
+                <li><a href="/about.html">About</a></li>
+                <li><a href="/contact.html">Contact</a></li>
+            </ul>
+
+            <ul class="social-nav">
+                <li><a href="#"><img
+                            src="https://raw.githubusercontent.com/danielleflinn/danielleflinn.github.io/master/img/logo-lightgray.png"
+                            alt="linked in logo"></a></li>
+                <li><a href="#"><img
+                            src="https://raw.githubusercontent.com/danielleflinn/danielleflinn.github.io/master/img/logo-lightgray.png"
+                            alt="github logo"></a></li>
+                <li><a href="#"><img
+                            src="https://raw.githubusercontent.com/danielleflinn/danielleflinn.github.io/master/img/logo-lightgray.png"
+                            alt="instagram logo"></a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <main>
+
+        <div class="tile-bar">
+            <h2>About</h2>
+        </div>
+
+        <section id="about">
+            <figure class="image-wrapper"><img
+                    src="https://pro2-bar-s3-cdn-cf.myportfolio.com/c5996554b28a38eefe8a742fcdb2e435/15a86fc4-a25e-4d97-b147-ef6963526589_rw_1920.jpg?h=b1b418c45dc81af359cbedae1475e2f3"
+                    id="head-shot" alt="image of Danielle"></figure>
+            <article id="about-content">
+                <p>If you haven't gathered by now, my name is Danielle Flinn. I currently live in Washington State and
+                    attend Eastern Washington University. I have been designing ever since I was young; from paper
+                    crafting and colored pencil patterns, I now find my favorite medium in Adobe Creative Cloud. </p>
+
+                <p>At Eastern Washington University, I am pursuing a Bachelor's of Design in Visual Communications and
+                    User Experience Design, with a minor in Web Development. Outside of the classroom, I facilitate
+                    freelance work for a variety of clients, both individuals and companies. This summer I hope to land
+                    an industry internship to increase my knowledge of User Experience Design and grow as an individual.
+                </p>
+
+                <p>When I am not sitting behind a computer or hiding out in a coffee shop, I often find myself out
+                    enjoying the Great Pacific Northwest. Whether I am volunteering with the WTA or hiking with friends,
+                    I always enjoy taking in the natural designs nature has to offer. </p>
+            </article>
+        </section>
+
+    </main>
+
+    <footer>
+
+        <nav>
+            <div class="footer-bar">
+                <ul>
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="/portfolio/ux.html">UX Design</a></li>
+                    <li><a href="/portfolio/brand.html">Brand Design</a></li>
+                    <li><a href="/portfolio/print.html">Print Design</a></li>
+                    <li><a href="/about.html">About</a></li>
+                    <li><a href="/contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <p>&copy; Copyright 2015 - <span class="year">2019</span>
+        </p>
+    </footer>
+
+    <!--#include file="include_head.html" -->
+
     <!-- jQuery Library via CDN -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <!-- Plugins(s) -->
-    
+
     <!-- My Scripts -->
     <script src="js/scripts.js"></script>
 </body>
+
 </html>

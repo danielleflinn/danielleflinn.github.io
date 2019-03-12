@@ -10,10 +10,7 @@
 } */
 
 /* Your Awesome Scripts */
-/* PRESENTATION
-* CSS: https://cssreference.io
-*https://daneden.github.io/animate.css
-*/
+
 
 :root {
   --prime-color: #898989; /*gray*/
@@ -289,9 +286,31 @@ footer nav ul {
 
 /* ux design page */
 
-
 /* Brand Design Page */
 
+/* About Page */
+
+#about {
+  margin: var(--tile-margin);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 0% 4%;
+}
+
+.image-wrapper {
+  width: 100%;
+  border: none;
+}
+
+#head-shot {
+  width: 100%;
+}
+
+#about-content {
+  grid-column: 2 span / 4;
+}
+
+/* Contact Form */
 
 /* keyfram animations */
 @keyframes dash {
