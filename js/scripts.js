@@ -10,7 +10,7 @@ $('.arrow-down').click(function() {
 
 // Light Gallery
 
-$('.gallery-1').lightGallery({
+$('.project-grid').lightGallery({
     selector: 'a',
     thumbnail: false,
     download: false,
