@@ -129,6 +129,9 @@ svg {
   /*  logo icon*/
 .top-nav img {
   width: 6vh;
+}
+
+#header-logo {
   margin-right: 25%;
 }
 
