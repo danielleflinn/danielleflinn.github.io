@@ -1,15 +1,406 @@
 /*
   DIAGNOSTIC STYLING
 */
-body {
+/* body {
   background: gray;
 }
 
 * {
   outline: 1px dotted black;
-}
+} */
 
 /* Your Awesome Scripts */
+/* PRESENTATION
+* CSS: https://cssreference.io
+*https://daneden.github.io/animate.css
+*/
+
+:root {
+  --prime-color: #898989; /*gray*/
+  --sec-color: #E1F3F5; /*blue*/
+  --thr-color: #FDF0FD; /*lavendarblush*/
+  --forth-color: #EDFFF9; /*seagreen*/
+  --outside-margin: 9%;
+  --tile-margin: 4% 9% 4% 9%;
+}
+
+body {
+    font-family: 'Fira Sans Condensed', sans-serif;
+    color: var(--prime-color);
+
+}
+
+header {
+  position: relative;
+  z-index: 1;
+}
+
+.logo-wrapper {
+  position: absolute;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  text-align: center;
+  background-color: var(--sec-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.head-title {
+  color: var(--prime-color);
+  opacity: 0;
+  animation: fadeIn .5s 2s linear forwards;
+}
+
+.head-title h1 {
+  font-size: 55px;
+  margin: 0;
+  margin-top: 10px;
+}
+
+.head-title  h4 {
+  font-size: 40px;
+  font-weight: 300;
+  margin: 10px;
+}
+
+svg {
+  fill: var(--prime-color);
+  stroke: var(--prime-color);
+  stroke-width: 1px;
+  width: 300px;
+}
+
+.letters-stroke {
+  fill-opacity: 0;
+  stroke-dasharray: 2000;
+  stroke-dashoffset: 2000;
+  animation: fadeFill 1s 2s linear forwards,
+            dash 1s linear forwards;
+}
+
+.inside-circle {
+  fill-opacity: 0;
+  stroke-dasharray: 1200;
+  stroke-dashoffset: 1200;
+  animation: fadeFill 1s 2s linear forwards,
+                dash 1s linear forwards; 
+}
+
+.outside-circle {
+  fill-opacity: 0;
+  stroke-dasharray: 1300;
+  stroke-dashoffset: 1300;
+  animation: fadeFill 1s 2s linear forwards,
+                dash 1s 1s linear forwards; 
+}
+
+.arrow-down {
+  height: 4vh;
+  width: 4vh;
+  opacity: .5;
+  border-bottom: solid var(--prime-color) 3px;
+  border-right: solid var(--prime-color)  3px;
+  border-radius: 0 0 4px 0;
+  transform: rotate(45deg);
+}
+
+.arrow-down:hover {
+   cursor: pointer;
+}
+
+.enter-site {
+  animation: fadeOutUp 2s forwards;
+}
+
+/* Header Nav styles  */
+
+  /* wrapper */
+.top-nav {
+  padding: 20px;
+  background-color: var(--sec-color);
+  height: 5vh;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+  /*  logo icon*/
+.top-nav img {
+  width: 6vh;
+  margin-right: 25%;
+}
+
+  /*   remove bullets and added margin */
+.top-nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+  /*  links to site pages group */
+.main-nav {
+  width: 60%;
+  color: darkblue;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+  /*  links to social media and social media icons */
+.social-nav {
+  width: 10%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+  /*  social media icons */
+.social-nav img{
+  margin-top: 4px;
+  width: 20px;
+}
+
+/* Link Styles */
+a {
+  color: var(--prime-color);
+  text-decoration: none;
+}
+
+a:hover {
+    opacity: .5;
+}
+
+a:visited {
+    opacity: .2;
+}
+
+
+/* General / dfault tile layouts */
+
+.tile {
+  margin-top: 5%;
+  width: 100%;
+}
+
+.tile-bar {
+  margin-top: var(--outside-margin);
+  position: relative;
+  width: 55%;
+  height: 5vh;
+  background-color: var(--sec-color);
+}
+
+.tile-bar h2 {
+  position: absolute;
+  font-size: 35px;
+  top: -47px;
+  margin-left: 15%;
+}
+
+.fig-wrapper {
+  display: flex;
+  margin: var(--tile-margin);
+}
+
+figure {
+  width: 100%;
+  height: 50vh;
+  margin: 0;
+  border: solid 1px var(--prime-color);
+}
+
+figcaption {
+  width: 45%;
+  margin: 5%;
+  font-size: 25px;
+}
+
+/* Right aligned tile */
+
+.fig-wrapper .right {
+  text-align: right;
+}
+
+#print h2 {
+    margin-left: 12%;
+}
+
+/*  Foot styles*/
+
+footer {
+  margin: 10% 0 6% 0;
+  text-align: center;
+  color: var(--prime-color);
+}
+
+footer nav {
+  margin-top: 5%;
+}
+
+.footer-bar {
+  width: 100%;
+  height: 5vh;
+  background-color: var(--sec-color);
+  position: relative;
+}
+
+footer nav ul {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  list-style-type: none;
+  padding: 0;
+  position: absolute;
+  top: -23px;
+}
+
+/* Change tile bar color */
+.print {
+   background-color: var(--forth-color);
+}
+
+#print {
+    margin-left: 45%;
+}
+
+.brand {
+  background-color: var(--thr-color);
+}
+
+/* basi  project-grid and tiles */
+
+.project-grid {
+  margin: var(--tile-margin); 
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  grid-column-gap: 45px;
+  grid-row-gap: 45px;
+}
+
+.project-tile {
+  width: 100%;
+  height: 300px;
+  background-size: cover;
+  background-color: var(--prime-color);
+}
+
+/* ux design page */
+
+
+#ux-tile-1 {
+  background-image: url(https://raw.githubusercontent.com/danielleflinn/danielleflinn.github.io/master/portfolio/img/print/digital-art/rfp-cover.png);
+}
+
+#ux-tile-2 {
+  background-image: url(https://raw.githubusercontent.com/danielleflinn/danielleflinn.github.io/master/portfolio/img/print/digital-art/rfp-cover.png);
+}
+
+#ux-tile-3 {
+  background-image: url(https://raw.githubusercontent.com/danielleflinn/danielleflinn.github.io/master/portfolio/img/print/digital-art/rfp-cover.png);
+}
+
+#ux-tile-4 {
+  background-image: url(https://raw.githubusercontent.com/danielleflinn/danielleflinn.github.io/master/portfolio/img/print/digital-art/rfp-cover.png);
+}
+
+#ux-tile-5 {
+  background-image: url(https://raw.githubusercontent.com/danielleflinn/danielleflinn.github.io/master/portfolio/img/print/digital-art/rfp-cover.png);
+}
+
+#ux-tile-6 {
+  background-image: url(https://raw.githubusercontent.com/danielleflinn/danielleflinn.github.io/master/portfolio/img/print/digital-art/rfp-cover.png);
+}
+
+/* print design page */
+
+
+#print-tile-1 {
+  background-image: url(https://raw.githubusercontent.com/danielleflinn/danielleflinn.github.io/master/portfolio/img/print/digital-art/rfp-cover.png);
+}
+
+#print-tile-2 {
+  background-image: url(https://raw.githubusercontent.com/danielleflinn/danielleflinn.github.io/master/portfolio/img/print/digital-art/rfp-cover.png);
+}
+
+#print-tile-3 {
+  background-image: url(https://raw.githubusercontent.com/danielleflinn/danielleflinn.github.io/master/portfolio/img/print/digital-art/rfp-cover.png);
+}
+
+#print-tile-4 {
+  background-image: url(https://raw.githubusercontent.com/danielleflinn/danielleflinn.github.io/master/portfolio/img/print/digital-art/rfp-cover.png);
+}
+
+#print-tile-5 {
+  background-image: url(https://raw.githubusercontent.com/danielleflinn/danielleflinn.github.io/master/portfolio/img/print/digital-art/rfp-cover.png);
+}
+
+#print-tile-6 {
+  background-image: url(https://raw.githubusercontent.com/danielleflinn/danielleflinn.github.io/master/portfolio/img/print/digital-art/rfp-cover.png);
+}
+
+/* Brand Design Page */
+
+
+#brand-tile-1 {
+  background-image: url(https://raw.githubusercontent.com/danielleflinn/danielleflinn.github.io/master/portfolio/img/print/digital-art/rfp-cover.png);
+}
+
+#brand-tile-2 {
+  background-image: url(https://raw.githubusercontent.com/danielleflinn/danielleflinn.github.io/master/portfolio/img/print/digital-art/rfp-cover.png);
+}
+
+#brand-tile-3 {
+  background-image: url(https://raw.githubusercontent.com/danielleflinn/danielleflinn.github.io/master/portfolio/img/print/digital-art/rfp-cover.png);
+}
+
+#brand-tile-4 {
+  background-image: url(https://raw.githubusercontent.com/danielleflinn/danielleflinn.github.io/master/portfolio/img/print/digital-art/rfp-cover.png);
+}
+
+#brand-tile-5 {
+  background-image: url(https://raw.githubusercontent.com/danielleflinn/danielleflinn.github.io/master/portfolio/img/print/digital-art/rfp-cover.png);
+}
+
+#brand-tile-6 {
+  background-image: url(https://raw.githubusercontent.com/danielleflinn/danielleflinn.github.io/master/portfolio/img/print/digital-art/rfp-cover.png);
+}
+
+/* keyfram animations */
+@keyframes dash {
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+@-webkit-keyframes fadeFill { /*adapted from animate css*/
+  0% {
+    fill-opacity: 0;
+  }
+  100% {
+    fill-opacity: 1;
+  }
+}
+
+@keyframes fadeIn { /*from animate css*/
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOutUp { /*from animate css*/
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+    transform: translate3d(0, -100%, 0);
+  }
+}
+
 
 
 /* Light Gallery background */
