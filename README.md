@@ -6,3 +6,5 @@ Winter 2019 Web 2 Starter. Our DIY framework.
 * [jQuery Libary](https://jquery.com)
 * [Light Gallery](http://sachinchoolur.github.io/lightGallery/
 
+### Other Resources
+* [Animate CSS]https://daneden.github.io/animate.css/)
