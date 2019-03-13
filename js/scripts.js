@@ -6,6 +6,8 @@ console.log('OK');
 $('.arrow-down').click(function() {
   
   $('.logo-wrapper').addClass('enter-site');
+  $('.tile').addClass('fade');
+
 });
 
 // Light Gallery
