@@ -4,17 +4,18 @@ permalink: /404.html
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 
-<!-- Page Title -->
+    <!-- Page Title -->
     <title>404</title>
 
-<!-- Metadata -->
+    <!-- Metadata -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-<!-- Favicons -->
+    <!-- Favicons -->
     <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="img/favicons/favicon-16x16.png">
@@ -22,30 +23,72 @@ permalink: /404.html
     <meta name="msapplication-TileColor" content="#2b5797">
     <meta name="theme-color" content="#ffffff">
 
-<!-- Normalize CSS via CDN -->
+    <!-- Normalize CSS via CDN -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-<!-- Required Plugin Stylesheets -->    
-    
-<!-- My Awesome Styling -->
+    <!-- Required Plugin Stylesheets -->
+
+    <!-- My Awesome Styling -->
     <link rel="stylesheet" href="css/styles.css">
 
 </head>
 
-<body>
-    
-    <h1>Page not found :(</h1>
-    <nav>
-        <ul>
-            <li><a href="portfolio/index.html">Portfolio</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
+<body class="error">
+    <header>
+        <nav class="top-nav error">
+            <img src="https://raw.githubusercontent.com/danielleflinn/danielleflinn.github.io/master/img/logo-lightgray.png"
+                alt="light gray logo with cursive d and f">
+            <ul class="main-nav">
+                <li><a href="#">UX Design</a></li>
+                <li><a href="#">Brand Design</a></li>
+                <li><a href="#">Print Design</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+
+            <ul class="social-nav">
+                <li><a href="#"><img
+                            src="https://raw.githubusercontent.com/danielleflinn/danielleflinn.github.io/master/img/logo-lightgray.png"
+                            alt="linked in logo"></a></li>
+                <li><a href="#"><img
+                            src="https://raw.githubusercontent.com/danielleflinn/danielleflinn.github.io/master/img/logo-lightgray.png"
+                            alt="github logo"></a></li>
+                <li><a href="#"><img
+                            src="https://raw.githubusercontent.com/danielleflinn/danielleflinn.github.io/master/img/logo-lightgray.png"
+                            alt="instagram logo"></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="error">
+        <div class="error-text">
+            <h2>404 Error</h2>
+            <p>Page not found</p>
+        </div>
+    </main>
+
+    <footer>
+
+        <nav>
+            <div class="footer-bar error">
+                <ul>
+                    <li><a href="#">UX Design</a></li>
+                    <li><a href="#">Brand Design</a></li>
+                    <li><a href="#">Print Design</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <p>&copy; Copyright 2015 - <span class="year">2019</span>
+        </p>
+    </footer>
     <!-- jQuery Library via CDN -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <!-- Plugins(s) -->
-    
+
     <!-- My Scripts -->
     <script src="js/scripts.js"></script>
 </body>
+
 </html>
