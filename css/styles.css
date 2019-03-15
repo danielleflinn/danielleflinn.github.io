@@ -376,9 +376,20 @@ form {
   }
 }
 
-
-
 /* Light Gallery background */
 .lg-backdrop { 
   background-color: rgba(200, 200, 250, .5);
+}
+
+/* media queries */
+@media (max-width: 500px) {
+  .logo {
+    width: 80%;
+  }
+  .fig-wrapper {
+    flex-direction: column;
+  }
+  .fig-wrapper .right {
+    flex-direction: column-reverse;
+  }
 }
