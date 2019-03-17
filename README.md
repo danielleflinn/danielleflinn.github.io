@@ -1,5 +1,5 @@
-# Web 2 Starter
-Winter 2019 Web 2 Starter. Our DIY framework.
+# Portfolio Site
+My portfolio site created from scratch, using the following.
 
 ## Dependencies
 * [Normalize CSS](https://necolas.github.io/normalize.css/)
@@ -8,3 +8,4 @@ Winter 2019 Web 2 Starter. Our DIY framework.
 
 ### Other Resources
 * [Animate CSS](https://daneden.github.io/animate.css/)
+* [Responsive Nav](https://codepen.io/kccnma/pen/Bykjr)
