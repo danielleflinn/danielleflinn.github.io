@@ -223,10 +223,6 @@ figcaption {
   text-align: right;
 }
 
-#print h2 {
-    margin-left: 12%;
-}
-
 /*  Foot styles*/
 
 footer {
@@ -382,14 +378,29 @@ form {
 }
 
 /* media queries */
-@media (max-width: 500px) {
+@media (max-width: 600px) {
   .logo {
     width: 80%;
+  }
+  .tile-bar h2 {
+    font-size: 25px;
+    top: -33px;
   }
   .fig-wrapper {
     flex-direction: column;
   }
-  .fig-wrapper .right {
+  figure {
+    height: 35vh;
+  }
+  .right {
     flex-direction: column-reverse;
+  }
+  #print h2 {
+    right: 9%;
+    margin-right: 9%;
+  }
+  figcaption {
+    width: 70%;
+    font-size: 20px;
   }
 }
