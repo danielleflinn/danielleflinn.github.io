@@ -291,24 +291,24 @@ footer nav ul {
 
 #about {
   margin: var(--tile-margin);
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 0% 4%;
+  margin-right: 20%;
+
+  display: flex;
 }
 
 .image-wrapper {
-  width: 100%;
+  width: 300px;
   border: none;
+  margin-right: 5%;
 }
 
 #head-shot {
-  width: 100%;
+  width: 300px;
 }
 
-#about-content {
-  grid-column: 2 span / 4;
+#about-content p {
+  margin-top: 0;
 }
-
 /* Contact Form */
 
 form {
@@ -400,6 +400,7 @@ form {
 }
 
 @media (max-width: 750px) {
+  /* responsive nav */
   .top-nav {
     justify-content: flex-start;
   }
@@ -429,10 +430,10 @@ form {
     display: block;
     padding: .75em 1.5em .5em 1.5em;
   }
-  
   .logo {
     width: 80%;
   }
+  /* responsive home tiles */
   .tile-bar h2 {
     font-size: 25px;
     top: -33px;
@@ -454,10 +455,20 @@ form {
     width: 70%;
     font-size: 20px;
   }
+    /* responsive about article */
+    #about {
+      margin-top: 6%;
+      flex-direction: column;
+      justify-content: center;
+      align-content: center;
+    }
+    #about-content {
+      margin-top: 15%;
+    } 
 }
 
 @media (max-width: 550px) {
   .project-grid {
     grid-template-columns: repeat(1, 1fr);
-  }
+  } 
 }
