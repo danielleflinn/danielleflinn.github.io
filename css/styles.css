@@ -145,6 +145,7 @@ svg {
 /*  links to site pages group */
 .main-nav {
   width: 70%;
+  background-color: var(--sec-color);
   display: flex;
   justify-content: space-evenly;
 }
@@ -258,19 +259,6 @@ footer nav ul {
   top: -23px;
 }
 
-/* Change tile bar specific styles / also for page specific navs */
-.print {
-   background-color: var(--forth-color);
-}
-
-#print {
-    margin-left: 45%;
-}
-
-.brand {
-  background-color: var(--thr-color);
-}
-
 /* basic project-grid and tiles */
 
 .project-grid {
@@ -278,15 +266,17 @@ footer nav ul {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: auto;
-  grid-column-gap: 45px;
-  grid-row-gap: 45px;
+  grid-column-gap: 35px;
+  grid-row-gap: 35px;
 }
 
 .project-tile {
   width: 100%;
-  height: 300px;
-  background-size: cover;
-  background-color: var(--prime-color);
+}
+
+/* Light Gallery background */
+.lg-backdrop { 
+  background-color: rgba(200, 200, 250, .5);
 }
 
 /* ux design page */
@@ -342,6 +332,20 @@ form {
     animation: fadeIn 5s ease-in;
   }
 
+/* Change tile bar specific styles / also for page specific navs */
+.print {
+  background-color: var(--forth-color);
+}
+
+#print {
+   margin-left: 45%;
+}
+
+.brand {
+ background-color: var(--thr-color);
+}
+
+
 /* keyfram animations */
 @keyframes dash {
   100% {
@@ -378,12 +382,14 @@ form {
   }
 }
 
-/* Light Gallery background */
-.lg-backdrop { 
-  background-color: rgba(200, 200, 250, .5);
-}
+
 
 /* media queries */
+@media (max-width: 950px) {
+  .project-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
 
 @media (max-width: 750px) {
   .top-nav {
@@ -400,12 +406,12 @@ form {
   .main-nav {
     display: none;
     position: absolute;
+    /* background: var(--sec-color); */
     width: 35%;
     padding: 2%;
     top: 75%;
     left: 15%;
     z-index: 1;
-    background: var(--sec-color);
     text-align: left;
   }
   .main-nav li {
@@ -440,5 +446,11 @@ form {
   figcaption {
     width: 70%;
     font-size: 20px;
+  }
+}
+
+@media (max-width: 550px) {
+  .project-grid {
+    grid-template-columns: repeat(1, 1fr);
   }
 }
