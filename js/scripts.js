@@ -1,13 +1,30 @@
 // Everything OK?
 console.log('OK');
 
-//heder animation
+//index.html header animation
 
 $('.arrow-down').click(function() {
   
   $('.logo-wrapper').addClass('enter-site');
   $('.tile').addClass('fade');
 
+});
+
+// responsive nav
+
+$(document).ready(function() {
+	   
+  // JQUERY NAV TOGGLE
+  $('#menu').bind('click',function(event){
+      $('.main-nav').slideToggle();
+  });
+
+  $(window).resize(function(){  
+      var w = $(window).width();  
+      if(w > 768) {  
+          $('.main-nav').removeAttr('style');  
+      }  
+  });
 });
 
 // Light Gallery
