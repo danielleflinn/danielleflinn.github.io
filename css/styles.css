@@ -15,7 +15,7 @@
   --prime-color: #898989; /*gray*/
   --sec-color: #E1F3F5; /*blue*/
   --thr-color: #FDF0FD; /*lavendarblush*/
-  --forth-color: #EDFFF9; /*seagreen*/
+  --forth-color: #dbf1e9; /*seagreen*/
   --outside-margin: 9%;
   --tile-margin: 4% 9% 4% 9%;
 }
@@ -112,7 +112,7 @@ svg {
 
 .fade {
   opacity: 0;
-  animation: fadeIn .5s 2s linear forwards;
+  animation: fadeIn .5s 1s linear forwards;
 }
 
 /* Header Nav styles  */
@@ -258,7 +258,7 @@ footer nav ul {
   top: -23px;
 }
 
-/* Change tile bar color */
+/* Change tile bar specific styles / also for page specific navs */
 .print {
    background-color: var(--forth-color);
 }
@@ -385,7 +385,7 @@ form {
 
 /* media queries */
 
-@media (max-width: 700px) {
+@media (max-width: 750px) {
   .top-nav {
     justify-content: flex-start;
   }
