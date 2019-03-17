@@ -15,7 +15,7 @@
   --prime-color: #898989; /*gray*/
   --sec-color: #E1F3F5; /*blue*/
   --thr-color: #FDF0FD; /*lavendarblush*/
-  --forth-color: #dbf1e9; /*seagreen*/
+  --forth-color: #e6f5ef; /*honeydew*/
   --outside-margin: 9%;
   --tile-margin: 4% 9% 4% 9%;
 }
@@ -126,7 +126,7 @@ svg {
   justify-content: flex-end;
   align-items: center;
 }
-  /*  logo icon*/
+  /*  nav logo */
 .top-nav img {
   width: 6vh;
 }
@@ -135,6 +135,7 @@ svg {
   width: 25px;
   margin-right: 25%;
 }
+
 
   /*   remove bullets and added margin */
 .top-nav ul {
@@ -158,8 +159,11 @@ svg {
 
   /*  social media icons */
 .social-nav img{
-  margin-top: 4px;
-  width: 20px;
+  width: 18px;
+}
+
+.social {
+  filter: invert(35%);
 }
 
 /* Link Styles */
