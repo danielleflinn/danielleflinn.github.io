@@ -132,6 +132,7 @@ svg {
 }
 
 #header-logo {
+  width: 25px;
   margin-right: 25%;
 }
 
@@ -141,17 +142,16 @@ svg {
   padding: 0;
 }
 
-  /*  links to site pages group */
+/*  links to site pages group */
 .main-nav {
-  width: 60%;
-  color: darkblue;
+  width: 70%;
   display: flex;
   justify-content: space-evenly;
 }
 
   /*  links to social media and social media icons */
 .social-nav {
-  width: 10%;
+  width: 20%;
   display: flex;
   justify-content: space-evenly;
 }
@@ -175,7 +175,13 @@ a:hover {
 a:visited {
     opacity: .2;
 }
+/* mobile menu */
 
+#menu {
+  display: none;
+  margin: 5%;
+  cursor: pointer;
+}
 
 /* General / dfault tile layouts */
 
@@ -378,7 +384,39 @@ form {
 }
 
 /* media queries */
-@media (max-width: 600px) {
+
+@media (max-width: 700px) {
+  .top-nav {
+    justify-content: flex-start;
+  }
+  #header-logo {
+      margin-right: 5%;
+  }
+  #menu {
+    display: block;
+    margin: auto 9%;
+    margin-right: 50%;
+  }
+  .main-nav {
+    display: none;
+    position: absolute;
+    width: 35%;
+    padding: 2%;
+    top: 75%;
+    left: 15%;
+    z-index: 1;
+    background: var(--sec-color);
+    text-align: left;
+  }
+  .main-nav li {
+    display: block;
+    padding: 2%;
+  }
+  .main-nav li a {
+    display: block;
+    padding: .75em 1.5em .5em 1.5em;
+  }
+  
   .logo {
     width: 80%;
   }
