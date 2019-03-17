@@ -248,7 +248,7 @@ footer nav {
 
 .footer-bar {
   width: 100%;
-  height: 5vh;
+  height: 7vh;
   background-color: var(--sec-color);
   position: relative;
 }
@@ -292,7 +292,6 @@ footer nav ul {
 #about {
   margin: var(--tile-margin);
   margin-right: 20%;
-
   display: flex;
 }
 
@@ -390,11 +389,10 @@ form {
   }
 }
 
-
-
 /* media queries */
 @media (max-width: 950px) {
   .project-grid {
+    margin-top: 6%;
     grid-template-columns: repeat(2, 1fr);
   }
 }
@@ -465,6 +463,17 @@ form {
     #about-content {
       margin-top: 15%;
     } 
+    /* responsive footer */
+    .footer-bar {
+      height: 27vh;
+    }
+    footer nav ul {
+      flex-direction: column;
+      top: 0;
+    }
+    .footer-bar ul li {
+      margin-top: 1%;
+    }
 }
 
 @media (max-width: 550px) {
