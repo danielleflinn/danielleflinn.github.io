@@ -281,7 +281,15 @@ footer nav ul {
 
 /* Light Gallery background */
 .lg-backdrop { 
-  background-color: rgba(200, 200, 250, .5);
+  background-color: rgba(200, 200, 250, .8);
+}
+
+.lg-toolbar .lg-icon, .lg-actions .lg-next, .lg-actions .lg-prev, #lg-counter  {
+  color: white;
+}
+
+.lg-toolbar .lg-icon:hover, .lg-actions .lg-next:hover, .lg-actions .lg-prev:hover  {
+  color: var(--prime-color);
 }
 
 /* ux design page */
@@ -294,6 +302,7 @@ footer nav ul {
   margin: var(--tile-margin);
   margin-right: 20%;
   display: flex;
+  align-content: center;
 }
 
 .image-wrapper {
@@ -304,11 +313,9 @@ footer nav ul {
 
 #head-shot {
   width: 300px;
+  border-radius: 50%;
 }
 
-#about-content p {
-  margin-top: 0;
-}
 /* Contact Form */
 
 form {
@@ -415,9 +422,8 @@ form {
     display: none;
     position: absolute;
     width: 30%;
-    padding: 2%;
     top: 75%;
-    left: 15%;
+    left: 17%;
     z-index: 1;
     text-align: left;
   }
@@ -461,6 +467,7 @@ form {
     /* responsive about article */
     #about {
       margin-top: 6%;
+      margin-right: 9%;
       flex-direction: column;
       justify-content: center;
       align-content: center;
