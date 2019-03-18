@@ -465,14 +465,14 @@ form {
     } 
     /* responsive footer */
     .footer-bar {
-      height: 27vh;
+      height: 30vh;
     }
     footer nav ul {
       flex-direction: column;
       top: 0;
     }
     .footer-bar ul li {
-      margin-top: 1%;
+      margin-top: 2%;
     }
 }
 
