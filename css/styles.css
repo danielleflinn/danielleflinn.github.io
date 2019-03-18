@@ -408,12 +408,12 @@ form {
   #menu {
     display: block;
     margin: auto 9%;
-    margin-right: 50%;
+    margin-right: 35%;
   }
   .main-nav {
     display: none;
     position: absolute;
-    width: 35%;
+    width: 30%;
     padding: 2%;
     top: 75%;
     left: 15%;
@@ -427,6 +427,10 @@ form {
   .main-nav li a {
     display: block;
     padding: .75em 1.5em .5em 1.5em;
+  }
+  .social-nav {
+    width: 30%;
+    margin-left: 4%;
   }
   .logo {
     width: 80%;
