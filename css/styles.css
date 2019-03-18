@@ -126,7 +126,7 @@ svg {
   justify-content: flex-end;
   align-items: center;
 }
-  /*  nav logo */
+/*  nav logo */
 .top-nav img {
   width: 6vh;
 }
@@ -216,10 +216,18 @@ a:visited {
 }
 
 figure {
+  display: flex;
+  justify-content: center;
   width: 100%;
   height: 50vh;
   margin: 0;
-  border: solid 1px var(--prime-color);
+  border: solid 3px var(--prime-color);
+  border-radius: 10px;
+ /* box-shadow: 5px 5px 5px 0px rgba(54, 54, 54, 0.1); */
+}
+
+.tile-img {
+  height: 100%;
 }
 
 figcaption {
