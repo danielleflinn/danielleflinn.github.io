@@ -36,7 +36,7 @@ $('.project-grid').lightGallery({
     autoplay: false,
     share: false,
     autoplayControls: false,
-    mode: 'lg-scale-up'
+    mode: 'lg-slide'
 });
 
 // footer date

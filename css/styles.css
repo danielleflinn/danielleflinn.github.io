@@ -281,7 +281,7 @@ footer nav ul {
 
 /* Light Gallery background */
 .lg-backdrop { 
-  background-color: rgba(200, 200, 250, .8);
+  background-color: rgba(200, 200, 250, .9);
 }
 
 .lg-toolbar .lg-icon, .lg-actions .lg-next, .lg-actions .lg-prev, #lg-counter  {
@@ -415,13 +415,14 @@ form {
   }
   #menu {
     display: block;
+    left: 17%;
     margin: auto 9%;
-    margin-right: 35%;
+    margin-right: 30%;
   }
   .main-nav {
     display: none;
     position: absolute;
-    width: 30%;
+    width: 200px;
     top: 75%;
     left: 17%;
     z-index: 1;
@@ -443,9 +444,15 @@ form {
     width: 80%;
   }
   /* responsive home tiles */
+  .tile-bar {
+    width: 60%;
+  }
   .tile-bar h2 {
     font-size: 25px;
     top: -33px;
+  }
+  #print {
+    margin-left: 40%;
   }
   .fig-wrapper {
     flex-direction: column;
@@ -457,7 +464,7 @@ form {
     flex-direction: column-reverse;
   }
   #print h2 {
-    right: 9%;
+    right: 6%;
     margin-right: 9%;
   }
   figcaption {
@@ -484,7 +491,7 @@ form {
       top: 0;
     }
     .footer-bar ul li {
-      margin-top: 2%;
+      margin-top: 3.5%;
     }
 }
 
