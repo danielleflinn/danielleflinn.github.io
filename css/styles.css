@@ -302,6 +302,14 @@ footer nav ul {
   color: var(--prime-color);
 }
 
+.lg-sub-html {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 10vh;
+  color: white;
+}
+
 /* ux design page */
 
 /* Brand Design Page */
