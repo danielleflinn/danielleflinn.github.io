@@ -177,10 +177,12 @@ a:hover {
     opacity: .5;
 }
 
-a:visited {
-    opacity: .2;
+.fig-wrapper:hover {
+  opacity: .6;
 }
-/* mobile menu */
+
+
+/* mobile nav menu */
 
 #menu {
   display: none;
